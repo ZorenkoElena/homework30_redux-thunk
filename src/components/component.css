@@ -1,0 +1,80 @@
+.wrapper {
+  text-align: center;
+  width: 600px;
+  background-color: #fdf5e6;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.wrapper h4 {
+  color: #d1410a;
+}
+
+ul {
+  text-align: start;
+}
+
+.homepageLink {
+  font-size: 20px;
+  line-height: 30px;
+  text-decoration: none;
+  color: #36312f;
+  text-align: start;
+}
+
+.homepageLink:hover {
+  font-size: 22px;
+  color: #d1410a;
+}
+
+.link {
+  color: #d1410a;
+}
+
+.link:hover {
+  color: #d69256;
+}
+
+.herolist {
+  background-color: #f7ebd4;
+  border-radius: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.heroCard {
+  background-color: #e8d5b2;
+  border: 1px solid #e8d5b2;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 15px;
+  transition: all 300ms ease;
+}
+
+.heroCard:hover {
+  background-color: #f7ebd4;
+  border: 1px solid #e8d5b2;
+}
+
+.hero {
+  background-color: #f7ebd4;
+  border: 1px solid #f7ebd4;
+  border-radius: 15px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.heroImage {
+  width: 150px;
+  border-radius: 15px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* .heroDescription {
+  text-align: left;
+} */
+
+.heroAvatar {
+  width: 40px;
+  border-radius: 20px;
+}
