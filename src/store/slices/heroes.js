@@ -44,20 +44,25 @@ export const heroSlice = createSlice({
   },
 });
 
-export const { getListOfHeroes, setErrInListOfHeroes, getInfo, setSelectedHero, closeSelectedHero, setErrInSelectedHero } =
-  heroSlice.actions;
+export const { closeSelectedHero } = heroSlice.actions;
 
 export const getListOfHeroesAsync = createAsyncThunk('heroes/fetchCharacters', async (page) => {
   const res = await axios(`character?page=${page}`);
   const data = await res.data;
   await new Promise((resolve) => setTimeout(resolve, 1000));
+  console.log('listOfHeroes', data);
   return data;
 });
 
 export const getHeroByIdAsync = createAsyncThunk('heroes/getHeroByIdAsync', async (id) => {
-  const res = await axios(`character/${id}`);
-  const data = await res.data;
-  return data;
+  try {
+    const res = await axios(`character/${id}`);
+    const data = await res.data;
+    console.log('selectedHero', data);
+    return data;
+  } catch (error) {
+    return error.message;
+  }
 });
 
 export default heroSlice.reducer;
