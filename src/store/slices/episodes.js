@@ -28,6 +28,7 @@ export const getListOfEpisodesAsync = createAsyncThunk('episodes/getListOfEpisod
   const res = await axios(`episode?page=${page}`);
   const data = await res.data;
   await new Promise((resolve) => setTimeout(resolve, 1000));
+  console.log('listOfEpisodes', data);
   return data;
 });
 
