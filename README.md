@@ -1,6 +1,6 @@
-Homework for the reduxjs/toolkit Async Thunk course.
+Page about cartoon characters Rick and Morty.
 
-Also used: axios, react-router-dom, Material UI.
+It used: React, React-router-dom, Reduxjs/toolkit Async Thunk, Axios, Material UI.
 
 The project consists of: Homepage, Characters page(rickandmortyapi), Episodes page(rickandmortyapi).
 
