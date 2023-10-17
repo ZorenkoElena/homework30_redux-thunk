@@ -12,7 +12,7 @@ import Box from '@mui/material/Box';
 
 import logo from '../images/rikAndMorti.png';
 
-const HomePage = () => {
+const WelcomePage = () => {
   return (
     <Container maxWidth="sm">
       <Box
@@ -50,4 +50,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default WelcomePage;
